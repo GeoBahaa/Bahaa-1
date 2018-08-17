@@ -34,6 +34,7 @@ public class ProductRepo {
 		addProduct(1008, "Sky 0.75L - Vodka", 18.99, 15);
 		addProduct(1009, "Russian River 12oz 6-pack", 30.99, 10);
 		addProduct(1010, "Bota Box Charonday 5L", 12.99, 15);
+		addProduct(1011, "Goldenshluger 0.75L", 25.99, 25);
 	}
 
 }
