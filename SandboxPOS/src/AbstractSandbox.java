@@ -20,6 +20,8 @@ public abstract class AbstractSandbox {
 			   public void actionPerformed(ActionEvent e) {
 				   mainPanel.monitorBox.textBox.append(System.getProperty("line.separator")
 						   +currentTransaction.doTransaction());
+				   mainPanel.monitorBox.textBox.setCaretPosition(
+							mainPanel.monitorBox.textBox.getDocument().getLength());
 			   }
 			});
 		mainPanel.transBox.bottomPanel.add(newButton);
