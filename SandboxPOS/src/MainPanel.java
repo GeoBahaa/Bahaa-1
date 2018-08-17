@@ -9,12 +9,17 @@ import javax.swing.JPanel;
 public class MainPanel extends JPanel{
 	MonitorBox monitorBox;
 	TransBox transBox;
+	InputBox inputBox;
+	Sandbox sandbox;
+	ProductRepo productRepo;
 	
-	private JPanel inputBox = new JPanel();
 	
 	public MainPanel() {
 		monitorBox = new MonitorBox (this);
 		transBox = new TransBox(this);
+		inputBox = new InputBox(this);
+		sandbox = new Sandbox(this);
+		productRepo = new ProductRepo(this);
 		JPanel mPanel = new JPanel(new BorderLayout());
 	      mPanel.add(monitorBox, BorderLayout.CENTER);
 	      mPanel.add(inputBox, BorderLayout.SOUTH);

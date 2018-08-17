@@ -19,9 +19,6 @@ public class MonitorBox extends JPanel {
 	JScrollPane scroll;
 	DefaultCaret caret;
 
-	
-	Rectangle background = new Rectangle (0,0,10000,10000);
-	Color skyblue = new Color (102, 204, 255);
 	Dimension mboxSize = new Dimension();
 	
 	public MonitorBox (MainPanel mPanel){
