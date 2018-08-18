@@ -18,15 +18,19 @@ public abstract class AbstractSandbox {
 
 			   @Override
 			   public void actionPerformed(ActionEvent e) {
-				   mainPanel.monitorBox.textBox.append(System.getProperty("line.separator")
-						   +currentTransaction.doTransaction());
-				   mainPanel.monitorBox.textBox.setCaretPosition(
-							mainPanel.monitorBox.textBox.getDocument().getLength());
+				   runCommand();
 			   }
 			});
 		mainPanel.transBox.bottomPanel.add(newButton);
 		
 	}
+	
+	public void runCommand() {
+		   mainPanel.monitorBox.textBox.append(System.getProperty("line.separator")
+				   +currentTransaction.doTransaction());
+		   mainPanel.monitorBox.textBox.setCaretPosition(
+					mainPanel.monitorBox.textBox.getDocument().getLength());
+	   }		
 	
 	protected void addButton(String bname, TransactionInterface tI) {
 		JRadioButton newButton = new JRadioButton(bname);
