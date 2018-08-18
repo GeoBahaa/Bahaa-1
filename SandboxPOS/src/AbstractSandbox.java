@@ -40,6 +40,7 @@ public abstract class AbstractSandbox {
 			   @Override
 			   public void actionPerformed(ActionEvent e) {
 				   currentTransaction = tI;
+				   tI.onClick();
 				   for (int i = 0; i<rButtons.size(); i++) {
 					   if (rButtons.get(i) == newButton) {
 						   

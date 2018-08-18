@@ -9,6 +9,8 @@ public class Sandbox extends AbstractSandbox{
 	private void setup() {
 		addButton("test", new TestTrans(mainPanel));
 		addButton("readBarcode", new ReadBarcode(mainPanel));
+		addButton("Print Trans", new PrintTrans());
+		addButton("Change Quantity", new ChangeQuantity(mainPanel));
 	}
 	
 	

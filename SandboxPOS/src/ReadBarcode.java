@@ -25,5 +25,8 @@ public class ReadBarcode implements TransactionInterface {
 		
 		
 	}
+	public void onClick() {
+		
+	}
 
 }

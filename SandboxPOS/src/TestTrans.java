@@ -8,5 +8,9 @@ public class TestTrans implements TransactionInterface {
 	public String doTransaction() {
 		return "Test works";
 	}
+	
+	public void onClick() {
+		
+	}
 
 }
