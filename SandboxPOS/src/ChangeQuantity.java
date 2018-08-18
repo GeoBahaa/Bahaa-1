@@ -40,7 +40,7 @@ public class ChangeQuantity implements TransactionInterface {
 				toChange = i;
 				phase =2;
 				return "You've selected "+products.get(i).getName()+
-						"to have quantity change"+ System.getProperty("line.separator")+
+						" to have quantity change"+ System.getProperty("line.separator")+
 						"Please enter new quantity";
 			}
 		}
