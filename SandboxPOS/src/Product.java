@@ -1,3 +1,4 @@
+import java.util.Date;
 
 public class Product {
 	
@@ -8,6 +9,12 @@ public class Product {
 	private double price;
 	
 	private int inventory;
+	
+	private String vendor;
+	
+	private Date  receivedDate;
+	
+	
 	
 	public int getBarcode() {
 		return barcode;
@@ -41,5 +48,20 @@ public class Product {
 		inventory = inv;
 	}
 	
-
+	public String getVendor() {
+		return vendor;
+	}
+	public void setVendor (String vendor) {
+		this.vendor = vendor;
+	
+	}
+	
+	public Date getRecievedDate() {
+		return receivedDate;
+		
+	}
+	public void setReceivedDate (Date receivedDate) {
+	 this.receivedDate = receivedDate;
+	 
+	}
 }
