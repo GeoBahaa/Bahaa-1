@@ -8,13 +8,11 @@ public class Product {
 	
 	private double price;
 	
-	private int inventory;
+	private String itemNo;
 	
-	private String vendor;
-	
-	private Date  receivedDate;
-	
-	
+	public Product () {
+		
+	}
 	
 	public int getBarcode() {
 		return barcode;
@@ -40,28 +38,16 @@ public class Product {
 		this.price = price;
 	}
 	
-	public int getInventory() {
-		return inventory;
-	}
 	
-	public void setInventory (int inv) {
-		inventory = inv;
-	}
 	
-	public String getVendor() {
-		return vendor;
-	}
-	public void setVendor (String vendor) {
-		this.vendor = vendor;
-	
-	}
-	
-	public Date getRecievedDate() {
-		return receivedDate;
+	public String getItemNo() {
+		return itemNo;
 		
 	}
-	public void setReceivedDate (Date receivedDate) {
-	 this.receivedDate = receivedDate;
-	 
+	
+	public void setItemNo (String itemNo) {
+		this.itemNo = itemNo;
+		
 	}
+	
 }
