@@ -18,7 +18,6 @@ public class ProductRepo {
 		product.setBarcode(barcode);
 		product.setName(name);
 		product.setPrice(price);
-		product.setInventory(inventory);
 		
 		products.add(product);
 	}
