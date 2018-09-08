@@ -10,6 +10,11 @@ public class Product {
 	
 	private String itemNo;
 	
+	private String category;
+	
+	private Cost cost;
+	
+	
 	public Product () {
 		
 	}
@@ -48,6 +53,24 @@ public class Product {
 	public void setItemNo (String itemNo) {
 		this.itemNo = itemNo;
 		
+	}
+	
+	public String getCategory() {
+		return category;
+		
+	}
+	
+	public void setCategory (String category) {
+		this.category = category;
+		
+	}
+
+	public Cost getCost() {
+		return cost;
+	}
+
+	public void setCost(Cost cost) {
+		this.cost = cost;
 	}
 	
 }

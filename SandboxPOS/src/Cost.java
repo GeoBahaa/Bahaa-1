@@ -10,9 +10,14 @@ public class Cost {
 	
 	private Vendor vendor;
 	
-	private int qtyRecevied;
+	private String itemVendor;
+	
+	private int qtyReceived;
 	
 	private double receivedCost;
+	
+
+	
 	
 	
 	public Cost() {
@@ -37,6 +42,46 @@ public class Cost {
 	
 	public void setProduct(Product product) {
 		this.product = product;
+		
+	}
+	public Vendor getVendor(){
+		return vendor;
+		
+	}
+	public void setVendor (Vendor vendor){
+		this.vendor = vendor;
+		
+	}
+    public Date ReceiveDate() {
+	return receiveDate;
+				
+	}
+	public void setReceiveDate (Date receiveDate) {
+		this.receiveDate = receiveDate;
+		
+	}
+	public String getItemVendor() {
+		return itemVendor;
+		
+	}
+	public void setItemVendor (String itemVendor) {
+		this.itemVendor = itemVendor;
+		
+	}
+	public int getQtyReceived() {
+		return qtyReceived;
+		
+	}
+	public void setQtyReceived (int qtyReceived) {
+		this.qtyReceived = qtyReceived;
+		
+	}
+	public double getReceivedCost() {
+		return receivedCost;
+		
+	}
+	public void setReceivedCost (double receivedCost) {
+		this.receivedCost = receivedCost;
 		
 	}
 }

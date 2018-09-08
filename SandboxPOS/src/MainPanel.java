@@ -11,7 +11,7 @@ public class MainPanel extends JPanel{
 	TransBox transBox;
 	InputBox inputBox;
 	Sandbox sandbox;
-	ProductRepo productRepo;
+	Repository productRepo;
 	
 	
 	public MainPanel() {
@@ -19,7 +19,7 @@ public class MainPanel extends JPanel{
 		transBox = new TransBox(this);
 		inputBox = new InputBox(this);
 		sandbox = new Sandbox(this);
-		productRepo = new ProductRepo(this);
+		productRepo = new Repository(this);
 		JPanel mPanel = new JPanel(new BorderLayout());
 	      mPanel.add(monitorBox, BorderLayout.CENTER);
 	      mPanel.add(inputBox, BorderLayout.SOUTH);

@@ -11,7 +11,6 @@ public class Sandbox extends AbstractSandbox{
 		addButton("test", new TestTrans(mainPanel));
 		addButton("readBarcode", new ReadBarcode(mainPanel));
 		addButton("Print Trans", new PrintTrans());
-		addButton("Change Quantity", new ChangeQuantity(mainPanel));
 	
 	}
 }
