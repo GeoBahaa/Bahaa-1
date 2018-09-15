@@ -10,6 +10,8 @@ public class Repository {
 	ArrayList<Product> products = new ArrayList<Product>();
 	ArrayList<Cost> costs = new ArrayList<Cost>();
 	ArrayList<Vendor> vendors = new ArrayList<Vendor>();
+	ArrayList<Sale> sales = new ArrayList<Sale>();
+	
 	
 	
 	
@@ -18,6 +20,9 @@ public class Repository {
 		setupProducts();
 		setupVendor();
 		setupCost();
+		setupSales();
+		
+		
 	}
 	
 	public void addCost (String lastCost, Date receiveDate, String itemVendor, int qtyReceived, double receivedCost, Product product, Vendor vendor) {
@@ -70,9 +75,27 @@ public class Repository {
 		vendors.add(vendor);
 		
 	}
+	
 
 	public void setupVendor() {
 		addVendor("Coors", "Greenwood Village", "7205836733", new Date(), "Beer");
 		
 	}
+	
+	public void addSales (Date SaleDate, Product product, Cost cost, Vendor vendor ) {
+		Sale sale = new Sale();
+		sale.setSaleDate(SaleDate);
+		sale.setCost(cost);
+		sale.setProduct(product);
+		sale.setVendor(vendor);
+		
+		sales.add(sale);
+		
+		
+	}
+	
+	public void setupSales() {
+	    addSales(new Date(), costs.get(0).getProduct(), costs.get(0), costs.get(0).getVendor());
+	
+}
 }

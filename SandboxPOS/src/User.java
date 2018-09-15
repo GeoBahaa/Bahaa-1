@@ -13,7 +13,7 @@ public class User {
 	
 	private String password;
 	
-	private TimeCard timeCard;
+	private String timeCard;
 	
 	
 	public String getFirstName() {
@@ -40,5 +40,29 @@ public class User {
 
 	public void setPhoneNo(String phoneNo) {
 		this.phoneNo = phoneNo;
+	}
+	
+	public String getUserID() {
+		return userID;
+	}
+	
+	public void setUserID(String userID) {
+	this.userID = userID;
+	}
+	
+	public String getPassword() {
+		return password;
+	}
+	public void setPassword (String password) {
+		this.password = password;
+	}
+	
+	public String getTimeCard() {
+		return timeCard;
+		
+	}
+	
+	public void setTimeCard (String timeCard) {
+		this.timeCard = timeCard;
 	}
 }
