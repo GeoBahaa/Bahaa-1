@@ -14,6 +14,10 @@ public class AddProductPopup extends JFrame{
 JPanel panel1;
 JLabel label1;
 JTextArea text1;
+JPanel panel2;
+JLabel label2;
+JTextArea text2;
+
 
 
 	public AddProductPopup(){
@@ -21,7 +25,9 @@ JTextArea text1;
 		this.setLayout(new BoxLayout(this.getContentPane(), BoxLayout.Y_AXIS));
 		addPadding();
 		addPanel1();
+		addPanel2();
 		label1.setText("Product Name");
+		label2.setText("Last Cost");
 		addPadding();
 		pack();
 		
@@ -38,10 +44,24 @@ JTextArea text1;
 		
 	}
 	
+	public void addPanel2() {
+		panel2= new JPanel();
+		panel2.setLayout(new BorderLayout());
+		label2 = new JLabel ("Label 2");
+		text2 = new JTextArea();
+		panel1.add(label2, BorderLayout.AFTER_LAST_LINE);
+		panel2.add(text2);
+		add(panel2);
+		
+	}
+	
 	public void addPadding() {
 		JPanel panelpadding = new JPanel();
 		setMinimumSize(new Dimension(500,5));
 		add (panelpadding);
+		
+				
 	}
 
+	
 }
